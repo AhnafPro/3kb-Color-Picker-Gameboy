@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<style>
+body {
+    background: #1E1F22;
+}
+    canvas {
+        outline: none;
+        border: 0.3 px solid #9E9994;
+        background-color: #BFB9B7;
+        height: 432px;
+        width: 270px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 32px;
+    }
+</style>
+<canvas></canvas>
+<script>
+    const canvas = document.querySelector('canvas');
+    const ctx = canvas.getContext('2d');
+
+    ctx.beginPath();
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = '#9E9994';
+    ctx.moveTo(0, 10);
+    ctx.lineTo(300,10);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.lineWidth = 4;
+    ctx.strokeStyle = '#9E9994';
+    ctx.moveTo(30, 0);
+    ctx.lineTo(30,10);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.lineWidth = 4;
+    ctx.strokeStyle = '#9E9994';
+    ctx.moveTo(270, 0); 
+    ctx.lineTo(270,10);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = '#545460';
+    ctx.moveTo(30,0);
+    ctx.roundRect(30, 20, 240, 50, [4, 4, 20, 4]);
+    ctx.fillStyle = '#545460'; 
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = '#0D0B19';
+    ctx.moveTo(30,0);
+    ctx.roundRect(30, 90, 75, 8, 3);
+    ctx.fillStyle = '#0D0B19';
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = '#0D0B19';
+    ctx.moveTo(30,0);
+    ctx.roundRect(53, 82, 30, 23, 3);
+    ctx.fillStyle = '#0D0B19';
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.lineWidth = 1;
+    ctx.fillStyle = '#88285A';
+    ctx.ellipse(215, 100, 17, 5, 0, 0, 2 * Math.PI);
+    ctx.stroke();
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.lineWidth = 1;
+    ctx.fillStyle = '#88285A';
+    ctx.ellipse(260, 90, 17, 5, 0, 0, 2 * Math.PI);
+    ctx.stroke();
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = '#8B9F5A';
+    ctx.moveTo(30,0);
+    ctx.roundRect(75, 25, 150, 40, 0);
+    ctx.fillStyle = '#8B9F5A';
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.lineWidth = 5;
+    ctx.strokeStyle = '#8D857B';
+    ctx.fillStyle = '#8D857B';
+    ctx.lineCap = 'round';
+    ctx.moveTo(100, 125);
+    ctx.lineTo(135, 119);
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.lineWidth = 5;
+    ctx.strokeStyle = '#8D857B';
+    ctx.fillStyle = '#8D857B';
+    ctx.lineCap = 'round';
+    ctx.moveTo(150, 125);
+    ctx.lineTo(185, 119);
+    ctx.fill();
+    ctx.stroke();
+</script>
