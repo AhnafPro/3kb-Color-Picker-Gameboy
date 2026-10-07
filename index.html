@@ -2,6 +2,10 @@
 <style>
 body {
     background: #1E1F22;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
     canvas {
         outline: none;
@@ -13,6 +17,7 @@ body {
         border-top-right-radius: 8px;
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 32px;
+        box-shadow: 5px 5px rgba(156, 154, 154, 0.84);
     }
 </style>
 <canvas></canvas>
@@ -93,8 +98,8 @@ body {
 
     ctx.beginPath();
     ctx.lineWidth = 5;
-    ctx.strokeStyle = '#8D857B';
-    ctx.fillStyle = '#8D857B';
+    ctx.strokeStyle = '#8B8989';
+    ctx.fillStyle = '#8B8989';
     ctx.lineCap = 'round';
     ctx.moveTo(100, 125);
     ctx.lineTo(135, 119);
@@ -103,11 +108,71 @@ body {
 
     ctx.beginPath();
     ctx.lineWidth = 5;
-    ctx.strokeStyle = '#8D857B';
-    ctx.fillStyle = '#8D857B';
+    ctx.strokeStyle = '#8B8989';
+    ctx.fillStyle = '#8B8989';
     ctx.lineCap = 'round';
     ctx.moveTo(150, 125);
     ctx.lineTo(185, 119);
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = '#8B7E6C';
+    ctx.fillStyle = '#8B7E6C';
+    ctx.lineCap = 'round';
+    ctx.moveTo(212, 133);
+    ctx.lineTo(243, 148);
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = '#8B7E6C';
+    ctx.fillStyle = '#8B7E6C';
+    ctx.lineCap = 'round';
+    ctx.moveTo(221, 131);
+    ctx.lineTo(252, 146);
+    ctx.fill();
+    ctx.stroke();
+    
+    ctx.beginPath();
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = '#8B7E6C';
+    ctx.fillStyle = '#8B7E6C';
+    ctx.lineCap = 'round';
+    ctx.moveTo(232, 130);
+    ctx.lineTo(263, 145);
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = '#8B7E6C';
+    ctx.fillStyle = '#8B7E6C';
+    ctx.lineCap = 'round';
+    ctx.moveTo(244, 128);
+    ctx.lineTo(275, 143);
+    ctx.fill()
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = '#8B7E6C';
+    ctx.fillStyle = '#8B7E6C';
+    ctx.lineCap = 'round';
+    ctx.moveTo(255, 127);
+    ctx.lineTo(286, 142);
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = '#8B7E6C';
+    ctx.fillStyle = '#8B7E6C';
+    ctx.lineCap = 'round';
+    ctx.moveTo(265, 125);
+    ctx.lineTo(296, 140);
     ctx.fill();
     ctx.stroke();
 </script>
