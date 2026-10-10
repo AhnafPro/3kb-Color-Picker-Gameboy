@@ -21,8 +21,8 @@ body {
         box-shadow: 5px 5px rgba(156, 154, 154, 0.84);
     }
     .box {
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         background-color: #9BBC0F;
     }
 
@@ -34,6 +34,48 @@ body {
 </style>
     <div style="z-index: 2; border: none; padding: 0; background: none; margin-left: 62px; margin-top: 65px; position: absolute; top: 0; left: 0;  width: 160px; height: 125px; display: flex; outline: none; resize: none; padding: 4px; box-sizing: border-box; overflow: hidden; text-align: center;">
         <div style="display: flex; width: 100%; flex-wrap: wrap; align-content: flex-start;">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
@@ -235,5 +277,15 @@ body {
     ctx.fill();
     ctx.stroke();
 
-    
+    const colors = ['#8bac0f','#306230','#0f380f','#9BBC0F']
+    const boxes = document.querySelectorAll('.box')
+
+    boxes.forEach(box => {
+        let colorIndex = 0
+
+        box.addEventListener('click', () => {
+                box.style.backgroundColor = colors[colorIndex];
+                colorIndex = (colorIndex + 1) % colors.length;
+            });
+        });
 </script>
